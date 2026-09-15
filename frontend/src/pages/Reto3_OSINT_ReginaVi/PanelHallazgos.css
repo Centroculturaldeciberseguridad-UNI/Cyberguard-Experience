@@ -1,0 +1,300 @@
+/* ============================================================
+   Panel Hallazgos — Sidebar del reto OSINT
+   ============================================================ */
+
+.ph {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  font-family: var(--font-body);
+}
+
+/* ── Cabecera ───────────────────────────────────────────── */
+
+.ph-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.ph-title {
+  font-size: 1rem;
+  font-family: var(--font-display);
+  font-weight: 700;
+}
+
+.ph-score {
+  display: flex;
+  align-items: baseline;
+  gap: 0.25rem;
+}
+
+.ph-score-num {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--accent);
+  font-family: var(--font-display);
+}
+
+.ph-score-max {
+  font-size: 0.72rem;
+  color: var(--text-muted);
+}
+
+/* ── Bloques ────────────────────────────────────────────── */
+
+.ph-block {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+
+.ph-block-title {
+  font-size: 0.82rem;
+  font-family: var(--font-display);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text-secondary);
+}
+
+.ph-block-desc {
+  font-size: 0.7rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+}
+
+/* ── Pista ──────────────────────────────────────────────── */
+
+.ph-pista {
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 0.75rem;
+  transition: border-color 0.2s;
+}
+
+.ph-pista-done { opacity: 0.85; }
+
+.ph-pista-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 0.5rem;
+  margin-bottom: 0.45rem;
+}
+
+.ph-pista-q {
+  font-size: 0.76rem;
+  line-height: 1.4;
+  flex: 1;
+}
+
+.ph-pista-pts {
+  font-size: 0.62rem;
+  color: var(--accent);
+  background: var(--accent-glow);
+  padding: 0.12rem 0.4rem;
+  border-radius: 4px;
+  flex-shrink: 0;
+  white-space: nowrap;
+}
+
+.ph-pista-row {
+  display: flex;
+  gap: 0.4rem;
+}
+
+.ph-input {
+  font-size: 0.76rem;
+  padding: 0.4rem 0.65rem;
+}
+
+/* ── Resultado ──────────────────────────────────────────── */
+
+.ph-res {
+  font-size: 0.76rem;
+  padding: 0.35rem 0.6rem;
+  border-radius: var(--radius);
+}
+
+.ph-res-ok {
+  color: var(--accent);
+  background: var(--accent-glow);
+}
+
+.ph-res-fail {
+  color: var(--danger);
+  background: rgba(255, 51, 102, 0.1);
+}
+
+.ph-err {
+  font-size: 0.7rem;
+  color: var(--danger);
+  margin-top: 0.3rem;
+}
+
+/* ── Pista pagada ───────────────────────────────────────── */
+
+.ph-pp { margin-top: 0.45rem; }
+
+.ph-pp-btn {
+  font-size: 0.68rem;
+  color: var(--warning);
+  border-color: var(--warning);
+  background: transparent;
+}
+.ph-pp-btn:hover {
+  background: rgba(255, 170, 0, 0.1);
+}
+
+.ph-pp-box {
+  background: rgba(255, 170, 0, 0.05);
+  border: 1px solid rgba(255, 170, 0, 0.2);
+  border-radius: var(--radius);
+  padding: 0.55rem;
+}
+
+.ph-pp-text {
+  font-size: 0.73rem;
+  color: var(--warning);
+  margin-bottom: 0.25rem;
+  line-height: 1.4;
+}
+
+.ph-pp-cost {
+  font-size: 0.63rem;
+  color: var(--text-muted);
+  margin-bottom: 0.4rem;
+}
+
+/* ── Contraseña ─────────────────────────────────────────── */
+
+.ph-pw-block {
+  border-top: 1px solid var(--border);
+  padding-top: 1.5rem;
+}
+
+.ph-pw-hint {
+  font-size: 0.63rem;
+  color: var(--text-muted);
+  margin-bottom: 0.3rem;
+}
+
+.ph-pw-count {
+  font-size: 0.68rem;
+  color: var(--text-muted);
+  margin-top: 0.35rem;
+}
+
+.ph-pw-done {
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 0.75rem;
+}
+
+.ph-pw-done-title {
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-bottom: 0.4rem;
+}
+
+.ph-pw-intento {
+  font-size: 0.73rem;
+  padding: 0.15rem 0;
+}
+
+/* ── Final ──────────────────────────────────────────────── */
+
+.ph-final {
+  background: var(--accent-glow);
+  border: 1px solid var(--accent);
+  border-radius: var(--radius-lg);
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.ph-final-title {
+  font-size: 1rem;
+  font-family: var(--font-display);
+  color: var(--accent);
+  margin-bottom: 0.4rem;
+}
+
+.ph-final-pts {
+  font-size: 0.85rem;
+}
+
+.ph-final-pts strong {
+  color: var(--accent);
+  font-size: 1.2rem;
+}
+
+/* ── Cronómetro ─────────────────────────────────────────── */
+
+.ph-head-right {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.ph-timer {
+  font-size: 0.85rem;
+  font-family: var(--font-display);
+  color: var(--text-secondary);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 0.2rem 0.55rem;
+}
+
+.ph-timer-urgente {
+  color: var(--danger);
+  border-color: var(--danger);
+  animation: pulse 1s ease-in-out infinite;
+}
+
+/* ── Terminar reto ──────────────────────────────────────── */
+
+.ph-terminar-btn {
+  margin-top: 0.6rem;
+  width: 100%;
+  color: var(--text-muted);
+}
+
+.ph-terminar-btn:hover {
+  color: var(--danger);
+  border-color: var(--danger);
+}
+
+/* ── Datos confirmados ──────────────────────────────────── */
+
+.ph-confirmados-lista {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.ph-confirmado-item {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.5rem;
+  font-size: 0.76rem;
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 0.45rem 0.65rem;
+}
+
+.ph-confirmado-label {
+  color: var(--text-muted);
+}
+
+.ph-confirmado-valor {
+  color: var(--accent);
+  font-weight: 500;
+}

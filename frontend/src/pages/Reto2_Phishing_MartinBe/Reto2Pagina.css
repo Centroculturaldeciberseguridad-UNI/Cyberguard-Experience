@@ -1,0 +1,395 @@
+.reto2-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2.5rem 1.5rem 4rem;
+}
+
+.reto2-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.reto2-badge-num {
+  display: inline-block;
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--danger);
+  background: rgba(255, 51, 102, 0.1);
+  border: 1px solid rgba(255, 51, 102, 0.3);
+  padding: 0.25rem 0.8rem;
+  border-radius: 20px;
+  margin-bottom: 0.8rem;
+  letter-spacing: 0.05em;
+}
+
+.reto2-title {
+  font-size: 2.2rem;
+  color: var(--text-primary);
+  margin-bottom: 0.6rem;
+}
+
+.reto2-subtitle {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  max-width: 650px;
+  margin: 0 auto;
+}
+
+/* Status Bar */
+.reto2-statusbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 0.8rem 1.2rem;
+  margin-bottom: 1.5rem;
+  font-size: 0.9rem;
+}
+
+.diff-badge {
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 0.2rem 0.6rem;
+  border-radius: 4px;
+}
+
+.diff-easy {
+  background: rgba(0, 255, 136, 0.15);
+  color: var(--accent);
+  border: 1px solid var(--accent);
+}
+
+.diff-medium {
+  background: rgba(255, 170, 0, 0.15);
+  color: var(--warning);
+  border: 1px solid var(--warning);
+}
+
+.diff-hard {
+  background: rgba(255, 51, 102, 0.15);
+  color: var(--danger);
+  border: 1px solid var(--danger);
+}
+
+.score-display strong {
+  color: var(--accent);
+}
+
+/* Email Card */
+.email-client-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.5);
+  margin-bottom: 2rem;
+}
+
+.email-header {
+  background: var(--surface-2);
+  border-bottom: 1px solid var(--border);
+  padding: 1.2rem 1.5rem;
+}
+
+.email-meta-row {
+  display: flex;
+  margin-bottom: 0.4rem;
+  font-size: 0.9rem;
+}
+
+.email-meta-label {
+  width: 90px;
+  color: var(--text-muted);
+  font-weight: 600;
+}
+
+.email-meta-value {
+  color: var(--text-primary);
+  word-break: break-all;
+}
+
+.email-sender-address {
+  color: var(--accent-2);
+  font-family: var(--font-body);
+  background: rgba(0, 180, 216, 0.1);
+  padding: 0.1rem 0.4rem;
+  border-radius: 4px;
+}
+
+.email-subject {
+  font-weight: 700;
+  color: var(--text-primary);
+  font-size: 1.05rem;
+}
+
+.email-body-content {
+  padding: 1.8rem 1.5rem;
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: #d1d1e0;
+  min-height: 160px;
+}
+
+/* URL Inspector Box */
+.email-link-preview {
+  margin-top: 1.5rem;
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 0.8rem 1.2rem;
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  font-size: 0.85rem;
+}
+
+.link-icon {
+  font-size: 1.1rem;
+}
+
+.link-url {
+  color: var(--accent-2);
+  font-family: var(--font-body);
+  word-break: break-all;
+}
+
+/* Acciones y Pistas */
+.email-actions-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.hint-section {
+  text-align: center;
+}
+
+.hint-btn {
+  background: none;
+  border: 1px dashed var(--warning);
+  color: var(--warning);
+  padding: 0.5rem 1.2rem;
+  border-radius: var(--radius);
+  cursor: pointer;
+  font-size: 0.85rem;
+  transition: all 0.2s;
+}
+
+.hint-btn:hover:not(:disabled) {
+  background: rgba(255, 170, 0, 0.1);
+}
+
+.hint-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.hint-text-box {
+  margin-top: 0.8rem;
+  background: rgba(255, 170, 0, 0.1);
+  border: 1px solid var(--warning);
+  border-radius: var(--radius);
+  padding: 0.8rem;
+  color: #ffe082;
+  font-size: 0.9rem;
+  text-align: left;
+}
+
+.decision-buttons {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.btn-choice {
+  padding: 1.2rem;
+  font-size: 1.05rem;
+  font-weight: 700;
+  border-radius: var(--radius);
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+}
+
+.btn-legit {
+  background: rgba(0, 255, 136, 0.1);
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.btn-legit:hover:not(:disabled) {
+  background: var(--accent);
+  color: #06060e;
+  box-shadow: 0 0 20px rgba(0, 255, 136, 0.4);
+  transform: translateY(-2px);
+}
+
+.btn-phishing {
+  background: rgba(255, 51, 102, 0.1);
+  border-color: var(--danger);
+  color: var(--danger);
+}
+
+.btn-phishing:hover:not(:disabled) {
+  background: var(--danger);
+  color: #ffffff;
+  box-shadow: 0 0 20px rgba(255, 51, 102, 0.4);
+  transform: translateY(-2px);
+}
+
+.btn-choice:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+/* Feedback Modal / Card */
+.feedback-card {
+  background: var(--surface);
+  border-radius: var(--radius-lg);
+  padding: 2rem;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.6);
+  margin-top: 1.5rem;
+  animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.fb-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.2rem;
+  padding-bottom: 0.8rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.fb-title {
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+.fb-pts {
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.fb-indicators-title {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  margin-bottom: 0.6rem;
+}
+
+.fb-indicator-item {
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 0.8rem 1rem;
+  margin-bottom: 0.6rem;
+}
+
+.fb-ind-label {
+  font-weight: 700;
+  color: var(--danger);
+  font-size: 0.9rem;
+  margin-bottom: 0.2rem;
+}
+
+.fb-ind-desc {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+}
+
+.fb-tip-box {
+  background: rgba(0, 180, 216, 0.08);
+  border: 1px solid rgba(0, 180, 216, 0.3);
+  border-radius: var(--radius);
+  padding: 1rem;
+  margin: 1.2rem 0 1.8rem;
+  font-size: 0.9rem;
+  color: var(--text-primary);
+}
+
+.btn-next-case {
+  width: 100%;
+  padding: 0.9rem;
+  font-size: 1rem;
+  font-weight: 700;
+  background: var(--accent-2);
+  color: #06060e;
+  border: none;
+  border-radius: var(--radius);
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.btn-next-case:hover {
+  background: #38c8e8;
+  transform: translateY(-2px);
+}
+
+/* Resultados Finales Reto 2 */
+.reto2-results-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 3rem 2rem;
+  text-align: center;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+}
+
+.results-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin: 2rem 0;
+}
+
+.stat-box {
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.2rem;
+}
+
+.stat-label {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  margin-bottom: 0.4rem;
+}
+
+.stat-value {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--accent);
+}
+
+.btn-goto-reto3 {
+  background: var(--accent);
+  color: #06060e;
+  font-weight: 700;
+  font-size: 1.1rem;
+  padding: 1rem 2.5rem;
+  border: none;
+  border-radius: var(--radius);
+  cursor: pointer;
+  transition: all 0.2s;
+  box-shadow: 0 0 20px rgba(0, 255, 136, 0.3);
+}
+
+.btn-goto-reto3:hover {
+  background: var(--accent-dim);
+  box-shadow: 0 0 30px rgba(0, 255, 136, 0.5);
+  transform: translateY(-2px);
+}
