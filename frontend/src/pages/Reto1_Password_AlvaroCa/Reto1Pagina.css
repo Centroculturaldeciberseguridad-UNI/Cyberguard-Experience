@@ -1,0 +1,508 @@
+.reto1-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2.5rem 1.5rem 4rem;
+}
+
+.reto1-header {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.reto1-badge-num {
+  display: inline-block;
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--accent-2);
+  background: rgba(0, 180, 216, 0.1);
+  border: 1px solid rgba(0, 180, 216, 0.3);
+  padding: 0.25rem 0.8rem;
+  border-radius: 20px;
+  margin-bottom: 0.8rem;
+  letter-spacing: 0.05em;
+}
+
+.reto1-title {
+  font-size: 2.2rem;
+  color: var(--text-primary);
+  margin-bottom: 0.6rem;
+}
+
+.reto1-subtitle {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  max-width: 650px;
+  margin: 0 auto;
+}
+
+/* Card Principal */
+.reto1-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 2rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+  margin-bottom: 2rem;
+}
+
+/* Formulario e Input */
+.password-form {
+  margin-bottom: 1.2rem;
+}
+
+.password-input-row {
+  display: flex;
+  gap: 0.8rem;
+  align-items: stretch;
+}
+
+@media (max-width: 650px) {
+  .password-input-row {
+    flex-direction: column;
+  }
+}
+
+.password-input-wrap {
+  position: relative;
+  flex: 1;
+}
+
+.password-input {
+  width: 100%;
+  height: 100%;
+  min-height: 48px;
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  color: var(--text-primary);
+  font-family: var(--font-body);
+  font-size: 1.1rem;
+  padding: 0.8rem 3.2rem 0.8rem 1.2rem;
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.password-input:focus {
+  border-color: var(--accent-2);
+  box-shadow: 0 0 12px rgba(0, 180, 216, 0.25);
+}
+
+.toggle-pwd-btn {
+  position: absolute;
+  right: 0.8rem;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  color: var(--text-secondary);
+  cursor: pointer;
+  font-size: 1.2rem;
+  padding: 0.4rem;
+}
+
+.toggle-pwd-btn:hover {
+  color: var(--text-primary);
+}
+
+.btn-evaluar-password {
+  background: linear-gradient(135deg, #00b4d8 0%, #0077b6 100%);
+  color: #ffffff;
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: 1rem;
+  padding: 0.8rem 1.6rem;
+  border: none;
+  border-radius: var(--radius);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  white-space: nowrap;
+  box-shadow: 0 4px 15px rgba(0, 180, 216, 0.3);
+  transition: all 0.2s ease;
+}
+
+.btn-evaluar-password:hover:not(:disabled) {
+  background: linear-gradient(135deg, #00c6ff 0%, #0072ff 100%);
+  box-shadow: 0 6px 20px rgba(0, 180, 216, 0.5);
+  transform: translateY(-2px);
+}
+
+.btn-evaluar-password:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+/* Quick samples */
+.quick-samples {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1.8rem;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+.sample-chip {
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  color: var(--text-secondary);
+  padding: 0.25rem 0.65rem;
+  border-radius: var(--radius);
+  font-family: var(--font-body);
+  font-size: 0.8rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.sample-chip:hover {
+  border-color: var(--accent-2);
+  color: var(--accent-2);
+  background: rgba(0, 180, 216, 0.08);
+}
+
+/* Medidor de nivel */
+.meter-container {
+  margin-bottom: 2rem;
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.2rem;
+}
+
+.meter-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.6rem;
+}
+
+.meter-level-name {
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.meter-pts-badge {
+  font-size: 0.9rem;
+  font-weight: 700;
+  padding: 0.2rem 0.6rem;
+  border-radius: 4px;
+}
+
+.meter-track {
+  height: 8px;
+  background: var(--surface-3);
+  border-radius: 4px;
+  overflow: hidden;
+  position: relative;
+}
+
+.meter-fill {
+  height: 100%;
+  transition: width 0.3s ease, background-color 0.3s ease;
+  border-radius: 4px;
+}
+
+/* Métricas Grid */
+.metrics-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.metric-card {
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1rem;
+  text-align: center;
+}
+
+.metric-label {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  letter-spacing: 0.05em;
+  margin-bottom: 0.4rem;
+}
+
+.metric-value {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--accent);
+  font-family: var(--font-body);
+}
+
+/* Alfabeto badges */
+.charset-badges {
+  display: flex;
+  justify-content: center;
+  gap: 0.4rem;
+  margin-top: 0.4rem;
+}
+
+.charset-badge {
+  font-size: 0.7rem;
+  padding: 0.15rem 0.4rem;
+  border-radius: 4px;
+  background: var(--surface-3);
+  color: var(--text-muted);
+  border: 1px solid var(--border);
+}
+
+.charset-badge.active {
+  background: rgba(0, 255, 136, 0.15);
+  color: var(--accent);
+  border-color: var(--accent);
+}
+
+/* Hardware Breakdown */
+.hardware-box {
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.hardware-title {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.hardware-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: 0.8rem;
+}
+
+.hardware-item {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  padding: 0.75rem 1rem;
+  border-radius: var(--radius);
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.hw-name {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+.hw-time {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+/* Alertas de vulnerabilidad */
+.vuln-alert {
+  background: rgba(255, 51, 102, 0.1);
+  border: 1px solid var(--danger);
+  border-radius: var(--radius);
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.vuln-alert-title {
+  color: var(--danger);
+  font-weight: 700;
+  font-size: 0.9rem;
+  margin-bottom: 0.4rem;
+}
+
+.vuln-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.vuln-list li {
+  font-size: 0.85rem;
+  color: #ffb3c6;
+  margin-bottom: 0.25rem;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+/* Instructions Box */
+.reto1-instructions-box {
+  background: rgba(0, 180, 216, 0.05);
+  border: 1px dashed rgba(0, 180, 216, 0.3);
+  border-radius: var(--radius);
+  padding: 1.5rem;
+  display: flex;
+  gap: 1.2rem;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.instructions-icon {
+  font-size: 2.2rem;
+  background: rgba(0, 180, 216, 0.1);
+  padding: 0.8rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.instructions-body h3 {
+  font-size: 1.05rem;
+  color: var(--text-primary);
+  margin-bottom: 0.35rem;
+}
+
+.instructions-body p {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  line-height: 1.45;
+  margin: 0;
+}
+
+.instructions-body strong {
+  color: var(--accent-2);
+}
+
+/* Evaluating state box */
+.evaluating-box {
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 2rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.evaluating-box p {
+  font-size: 0.95rem;
+  color: var(--accent-2);
+  margin: 0;
+}
+
+.evaluating-spinner {
+  width: 40px;
+  height: 40px;
+  border: 3px solid rgba(0, 180, 216, 0.2);
+  border-top-color: var(--accent-2);
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+.spinner-mini {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-top-color: #ffffff;
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+/* Results section entrance */
+.reto1-results-section {
+  animation: fadeInResults 0.4s ease-out;
+}
+
+@keyframes fadeInResults {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.reintentar-hint {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  background: var(--surface-2);
+  padding: 0.6rem 1rem;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.reintentar-hint strong {
+  color: var(--accent-2);
+}
+
+/* Feedback box */
+.feedback-box {
+  background: rgba(0, 180, 216, 0.08);
+  border: 1px solid rgba(0, 180, 216, 0.3);
+  border-radius: var(--radius);
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  font-size: 0.9rem;
+  color: var(--text-primary);
+}
+
+/* Intentos y acciones */
+.reto1-footer-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border);
+}
+
+.intentos-tracker {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+}
+
+.intentos-tracker strong {
+  color: var(--accent);
+}
+
+.btn-completar-reto1 {
+  background: var(--accent);
+  color: #06060e;
+  font-weight: 700;
+  font-size: 1rem;
+  padding: 0.8rem 1.8rem;
+  border: none;
+  border-radius: var(--radius);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 0 15px rgba(0, 255, 136, 0.2);
+}
+
+.btn-completar-reto1:hover:not(:disabled) {
+  background: var(--accent-dim);
+  box-shadow: 0 0 25px rgba(0, 255, 136, 0.4);
+  transform: translateY(-2px);
+}
+
+.btn-completar-reto1:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
