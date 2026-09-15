@@ -1,12 +1,12 @@
 <p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Orbitron&size=50&duration=3000&pause=1000&color=00BFFF&center=true&vCenter=true&width=1000&height=80&lines=🕵️+Cyberguard+Experience+🕵️" />
+  <img src="https://readme-typing-svg.herokuapp.com?font=Orbitron&size=56&duration=3000&pause=1000&color=ED15E6&center=true&vCenter=true&width=1000&height=80&lines=🕵️+Cyberguard+Experience+🕵️" />
 </p>
 
 > **Pon a prueba tus habilidades. Identifica las amenazas. Aprende mientras juegas.**
 
 ---
 
-## 🎯 Objetivo
+# Objetivo
 
 El objetivo del proyecto es acercar conceptos de ciberseguridad a los participantes mediante una experiencia práctica, interactiva y educativa.
 
@@ -15,25 +15,27 @@ En lugar de limitarse a explicar las amenazas de forma teórica, CyberGuard Expe
 La plataforma está diseñada para poder ser utilizada por personas con diferentes niveles de conocimiento en ciberseguridad.
 
 ---
-## 👥 Equipo
+# Equipo
 
 El proyecto fue desarrollado por un equipo de tres integrantes, donde cada integrante trabajó principalmente en un reto independiente:
 
 | Módulo                | Área                                      | Integrante  |
 | --------------------- | ----------------------------------------- |-------------|
-| 🔐 Password Challenge | Seguridad de contraseñas                  |Alvaro Antonio Canchaya Espinoza
-| 🎣 Phishing Detective | Detección de phishing e ingeniería social |Martin Alberto Benites Marin
-| 🕵️ OSINT Challenge   | Investigación con fuentes abiertas        |Regina Sofia Villacriz Villavicencio
+| Password Challenge | Seguridad de contraseñas                  |Alvaro Antonio Canchaya Espinoza
+| Phishing Detective | Detección de phishing e ingeniería social |Martin Alberto Benites Marin
+| OSINT Challenge   | Investigación con fuentes abiertas        |Regina Sofia Villacriz Villavicencio
 
 Esta organización permitió el desarrollo simultáneo de los módulos, manteniendo interfaces y responsabilidades separadas para facilitar la integración final.
 
 ---
 
-## 🧩 Retos
+# Retos
 
-### 🔐 Crackea tu Contraseña
+## 🔐 Password Challenge
 
 Este reto permite al participante evaluar la seguridad de una contraseña mediante un entorno controlado.
+
+![Contraseña](contraseña.jpeg)
 
 El sistema analiza características como:
 
@@ -44,61 +46,61 @@ El sistema analiza características como:
 * Uso de números o años.
 * Repeticiones.
 
-También presenta una simulación educativa de ataques como:
-
-* Fuerza bruta.
-* Ataques de diccionario.
-* Análisis de patrones.
-
-> ⚠️ **Nota:** No se realizan ataques contra cuentas, sistemas ni servicios reales. La funcionalidad se ejecuta únicamente con fines educativos y en un entorno controlado.
+> 👨‍💻 **Desarrollador:** Alvaro Antonio Canchaya Espinoza (EL GRAN TONY)
 
 ---
 
-### 🎣 Phishing Detective
+## 🎣 Phishing Detective
 
 Un reto interactivo en el que el participante debe analizar diferentes correos electrónicos y determinar si son:
 
 * 🟢 **Legítimos**
 * 🔴 **Phishing**
 
+![Phishing](phishing.jpeg)
+
 Los escenarios incluyen distintos indicadores y técnicas, como:
 
 * Dominios sospechosos.
-* Typosquatting.
 * Urgencia artificial.
 * Suplantación de identidad.
 * Solicitudes de credenciales.
 * Enlaces sospechosos.
 * Ingeniería social.
-* Archivos adjuntos sospechosos.
 
 Después de cada respuesta, el usuario recibe feedback educativo que explica los indicadores presentes en el escenario.
 
 Todos los correos y escenarios utilizados son ficticios y han sido diseñados exclusivamente para fines educativos.
 
+> 👨‍💻 **Desarrollador:** Martin Alberto Benites Marin
+
 ---
 
-### 🕵️ OSINT Challenge
+## 🕵️ OSINT Challenge
 
 Un reto de investigación basado en **Open Source Intelligence (OSINT)**.
 
-El participante debe analizar diferentes pistas y correlacionar información para resolver un desafío.
+![OSINT1](osint1.jpeg)
+![OSINT2](osint2.jpeg)
 
-Dependiendo del escenario, el reto puede involucrar elementos como:
+El participante debe analizar una cuenta de Instagram y correlacionar información para resolver un desafío.
 
-* Usernames.
-* Dominios.
-* Perfiles ficticios.
-* Repositorios.
-* Información pública de prueba.
-* Metadatos.
-* Correlación de información.
+El reto involucra información como:
+
+* Nombres
+* Fechas
+* Perfiles familiares
+* Ciudad
+* Lugares concurrentes
+* Correos
+* Empresas
 
 El objetivo es demostrar cómo la información aparentemente aislada puede convertirse en conocimiento útil cuando es investigada y correlacionada.
 
+> 👩‍💻 **Desarrolladora:** Regina Sofia Villacriz Villavicencio
 ---
 
-## 🎮 Experiencia del usuario
+# Experiencia del usuario
 
 La experiencia está diseñada como una plataforma gamificada:
 
@@ -121,10 +123,12 @@ La experiencia está diseñada como una plataforma gamificada:
 
 Los participantes pueden completar los diferentes retos y obtener puntuaciones basadas en su desempeño.
 
+![Ranking](ranking.jpeg)
+
 El objetivo final es ofrecer una experiencia rápida, entretenida y educativa que pueda completarse aproximadamente en unos minutos durante un evento.
 
 ---
-## 🔒 Seguridad y privacidad
+# Seguridad y privacidad
 
 CyberGuard Experience fue diseñado con fines educativos.
 
@@ -134,32 +138,12 @@ Por ello:
 * No se utilizan credenciales reales.
 * No se almacenan contraseñas reales.
 * No se envían correos electrónicos reales.
-* Los escenarios de phishing son ficticios.
+* Los escenarios de phishing y OSINT son ficticios.
 * Los enlaces utilizados en las simulaciones no conducen a sitios maliciosos reales.
 * Los retos se ejecutan en un entorno controlado.
 * No se requiere información personal sensible para participar.
 
 El proyecto busca enseñar conceptos de ciberseguridad de forma responsable y segura.
-
----
-
-## 📚 Propósito educativo
-
-CyberGuard Experience busca demostrar conceptos relacionados con:
-
-* Concientización en ciberseguridad.
-* Seguridad de contraseñas.
-* Fuerza bruta.
-* Ataques de diccionario.
-* Ingeniería social.
-* Phishing.
-* Typosquatting.
-* Análisis de indicadores.
-* OSINT.
-* Correlación de información.
-* Protección de identidades digitales.
-
-El proyecto puede ser utilizado como una herramienta de demostración, concientización o introducción práctica a diferentes áreas de la ciberseguridad.
 
 ---
 
