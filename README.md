@@ -14,6 +14,8 @@ En lugar de limitarse a explicar las amenazas de forma teórica, CyberGuard Expe
 
 La plataforma está diseñada para poder ser utilizada por personas con diferentes niveles de conocimiento en ciberseguridad.
 
+![Certificado](CCCertificado.png)
+
 ---
 # Equipo
 
