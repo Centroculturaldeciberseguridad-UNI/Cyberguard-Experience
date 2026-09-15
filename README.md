@@ -1,4 +1,6 @@
-# 🛡️ CyberGuard Experience
+<p align="center">
+  <img src="https://readme-typing-svg.herokuapp.com?font=Orbitron&size=50&duration=3000&pause=1000&color=00BFFF&center=true&vCenter=true&width=1000&height=80&lines=🕵️+Cyberguard+Experience+🕵️" />
+</p>
 
 > **Pon a prueba tus habilidades. Identifica las amenazas. Aprende mientras juegas.**
 
